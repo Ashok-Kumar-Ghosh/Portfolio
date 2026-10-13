@@ -7,98 +7,410 @@
   <title>Portfolio</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class=" h-screen  bg-[#121212] bg-[#121212] bg-[image:linear-gradient(to_right,#222222_1px,transparent_1px),linear-gradient(to_bottom,#222222_1px,transparent_1px)] [background-size:100px_100px] min-h-screen">
+<body class="h-screen bg-[#121212] bg-[image:linear-gradient(to_right,#4A4A4A_1px,transparent_1px),linear-gradient(to_bottom,#4A4A4A_1px,transparent_1px)] [background-size:100px_100px] min-h-screen">
 
     <!-- HERO -->
-
-    <main class="bg-white rounded-3xl h-[85vh] w-[90vw]  mt-[4vh] mr-[5vw] ml-[5vw] shadow-lg shadow-[#233B3A] border border-solid border-black">
-        <nav class="bg-white shadow-2xl shadow-gray-700  text-red-600 h-[15%]  mr-[2%] ml-[2%]  rounded-3xl flex flex-row justify-evenly align-bottom ">
-            <div  class="text-2xl border border-solid border-l-black border-r-black border-t-gray-200 border-b-white  flex flex-col-reverse mb-[1vh] "><h1 class=" text-2xl">SKILLS</h1></div>
-            <div  class="text-2xl border border-solid border-l-black border-r-black border-t-gray-200 border-b-white flex flex-col-reverse mb-[1vh] mr-[15vw]"><h1>PROJECTS</h1></div>
-            <div  class="text-2xl border border-solid border-l-black border-r-black border-t-gray-200 border-b-white flex flex-col-reverse mb-[1vh]"><h1>EDUCATION</h1></div>
-            <div  class="text-2xl border border-solid border-l-black border-r-black border-t-gray-200 border-b-white flex flex-col-reverse mb-[1vh]"><h1>CONTACT</h1></div>
-
+    <main class="bg-gray-100 rounded-3xl h-[85vh] w-[90vw] mt-[4vh] mr-[5vw] ml-[5vw] shadow-lg shadow-[#233B3A] border border-solid border-black relative">
+        
+        <!-- NAV -->
+        <nav class="bg-gray-100 shadow-2xl shadow-gray-700 text-red-700 h-[15%] mr-[2%] ml-[2%] rounded-3xl flex flex-row justify-evenly items-center">
+            <a href="#skills" class="text-2xl bg-gray-100 border border-solid border-l-black border-r-black border-t-gray-100 border-b-gray-100 flex flex-col-reverse mb-[1vh]"><h1>SKILLS</h1></a>
+            <a href="#projects" class="text-2xl bg-gray-100 border border-solid border-l-black border-r-black border-t-gray-100 border-b-gray-100 flex flex-col-reverse mb-[1vh] "><h1>PROJECTS</h1></a>
+            <a href="#education" class="text-2xl bg-gray-100 border border-solid border-l-black border-r-black border-t-gray-100 border-b-gray-100 flex flex-col-reverse mb-[1vh]"><h1>EDUCATION</h1></a>
+            <a href="#contact" class="text-2xl bg-gray-100 border border-solid border-l-black border-r-black border-t-gray-100 border-b-gray-100 flex flex-col-reverse mb-[1vh]"><h1>CONTACT</h1></a>
         </nav>
-        <div class="flex flex-row justify-center text-[25vh] text-red-700 border border-solid border-red-600">
-            <h1 >P</h1>
-            <h1>O</h1>
-            <h1>R</h1>
-            <h1>T</h1>
-            <h1 >--</h1>
-            <h1 >F</h1>
-            <h1 >O</h1>
-            <h1>L</h1>
-            <h1>I</h1>
-            <h1>O</h1>
 
+        <!-- HERO TITLE -->
+        <div class="flex justify-center items-center h-[35vh] w-[85vw] ml-[4vw] text-red-700 text-[8vw] ">
+            <h1 class="font-['Parisienne',static]">PORT----FOLIO</h1>
         </div>
-        <div class=" grid absolute bottom-40 left-100 rounded-[40vw] h-[75vh] w-[85vh]"><img class="h-[75vh] w-[85vh] bg-gray-200 bg-transparent rounded-br-xl" src="./assets/profilepic.pn"></div>
-        <div>
-            
+
+        <!-- HERO PROFILE PICTURE-->
+        <div class="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full h-[60vh] w-[60vh] overflow-hidden shadow-lg shadow-gray-600">
+            <img class="h-full w-full object-cover bg-gray-200 bg-transparent" src="./assets/profilepic.png" alt="Profile Picture">
         </div>
+        
 
     </main>
 
     <!-- SIDE PROFILE CARD && SHORT INTRODUCTION -->
-    <section class=" h-[380vh] w-[90vw]  mt-[4vh] mr-[5vw] ml-[5vw] rounded-xl flex flex-row">
-       
-        <div class="h-[90vh] w-[30vw] rounded-4xl bg-[#022B3A] sticky mt-[5vh] top-[5vh] left-5 shadow-lg shadow-gray-300 z-10" >
-            <div class="bg-[#022B3A] ">
-                <div class="h-[20vw] w-[21vw] bg-gray-400 rounded-3xl ml-[3vw] mt-[3vw] shadow-lg shadow-white">
+    <section class="h-[475vh] w-[90vw] mt-[4vh] mr-[5vw] ml-[5vw] rounded-xl flex flex-row">
+        
+        <!-- SIDE PROFILE CARD -->
+        <div class="h-[90vh] w-[30vw] rounded-4xl bg-gray-100 sticky mt-[4vh] top-[4vh] left-5 shadow-lg shadow-gray-800 z-10">
+            <div class="bg-gray-100">
+                <div class="h-[20vw] w-[21vw] bg-gray-600 rounded-4xl ml-[3vw] mt-[3vw] shadow-lg shadow-gray-600 overflow-hidden">
+                    <img class="h-[20vw] w-[22vw] object-cover" src="./assets/profilepic.png" alt="Profile Picture">
+                </div>
+                <div class="h-[8vw] w-[21vw] bg-gray-400 rounded-tr-4xl rounded-bl-4xl ml-[3vw] mt-[1vw] shadow-lg shadow-gray-600 flex items-center justify-center p-4">
+                    <h4 class="text-wrap m  text-center">"The magic you are looking for is in the work you are avoiding"</h4>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-4 mt-[2vh] px-4"> 
+                    <a href="https://github.com/Ashok-Kumar-Ghosh" target="_blank" class="h-[6vw] w-[6vw] bg-gray-400 rounded-4xl shadow-lg shadow-gray-600 flex items-center justify-center overflow-hidden hover:scale-[1.02] hover:shadow-2xl transition-all"><img class="h-[5vw] w-[5vw]" src="./assets/github.png" alt="Python"></a>
+                    <a href="https://www.linkedin.com/in/ashokkrghosh/" target="_blank" class="h-[6vw] w-[6vw] bg-gray-400 rounded-4xl shadow-lg shadow-gray-600 flex items-center justify-center overflow-hidden hover:scale-[1.02] hover:shadow-2xl transition-all"><img class="h-[5vw] w-[5vw]" src="./assets/linkedin.png" alt="HTML"></a>
+                    <a href="mailto:ashok0121ed@gmail.com" target="_blank" class="h-[6vw] w-[6vw] bg-gray-400 rounded-4xl shadow-lg shadow-gray-600 flex items-center justify-center overflow-hidden hover:scale-[1.02] hover:shadow-2xl transition-all "><img class="h-[5vw] w-[5vw]" src="./assets/social.png" alt="CSS"></a>
+            </div>
+        </div>
 
+        <!-- RIGHT CONTENT SECTIONS -->
+        <div class="h-[450vh] w-[68vw] ml-[2vw] mt-[2vw] rounded-xl bg-transparent">
+
+            <!-- INTRODUCTION -->
+            <div class="h-[90vh] w-[60vw] rounded-4xl bg-gray-100 shadow-lg ml-[1vw] shadow-gray-300 flex flex-col justify-center items-center text-center p-8">
+                <div class="w-[50vw] bg-gradient-to-br from-gray-200 to-gray-300 border border-solid border-white p-8 rounded-3xl shadow-inner flex flex-col items-center gap-4">
+                    <span class="text-red-600 font-semibold tracking-wider uppercase text-sm bg-gray-100 px-4 py-1 rounded-full shadow-sm">Hello World</span>
+                    <p class="text-2xl font-bold text-gray-900">"Hi, I'm Ashok Kumar Ghosh 👋"</p>
+                    <p class="text-lg text-red-700 font-medium">First-Year Computer Science Student & Web Developer</p>
+                    <p class="text-base text-gray-600 max-w-[42vw] leading-relaxed">
+                        "Building modern web applications, exploring competitive programming, and  while doing so trying to solve real-world problems through code."
+                    </p>
+                </div>
+            </div>
+
+            <!-- SKILLS -->
+            <div id="skills" class="h-[90vh] w-[60vw] rounded-4xl bg-gray-100 mt-[5vh] ml-[1vw] shadow-lg shadow-gray-700 flex flex-col items-center justify-center">
+                <div class="rounded-4xl shadow-lg shadow-gray-700 bg-gray-200 w-[15vw] h-[8vh] text-red-700 mt-[2vh] flex items-center justify-center">
+                    <h1 class="text-center text-4xl overflow-visible">Skills</h1>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-6 mt-[6vh] px-8 w-full max-w-[50vw]"> 
+                    <div class="bg-gray-200 p-4 rounded-2xl shadow-md flex items-center gap-4 border border-gray-300 hover:scale-105 transition-transform">
+                        <div class="h-[4vw] w-[4vw] bg-white rounded-xl shadow flex items-center justify-center overflow-hidden p-1"><img class="h-[3vw] w-[3vw] object-contain" src="./assets/python.png" alt="Python"></div>
+                        <span class="font-bold text-gray-800 text-lg">Python</span>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-2xl shadow-md flex items-center gap-4 border border-gray-300 hover:scale-105 transition-transform">
+                        <div class="h-[4vw] w-[4vw] bg-white rounded-xl shadow flex items-center justify-center overflow-hidden p-1"><img class="h-[3vw] w-[3vw] object-contain" src="./assets/html.png" alt="HTML"></div>
+                        <span class="font-bold text-gray-800 text-lg">HTML</span>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-2xl shadow-md flex items-center gap-4 border border-gray-300 hover:scale-105 transition-transform">
+                        <div class="h-[4vw] w-[4vw] bg-white rounded-xl shadow flex items-center justify-center overflow-hidden p-1"><img class="h-[3vw] w-[3vw] object-contain" src="./assets/css.png" alt="CSS"></div>
+                        <span class="font-bold text-gray-800 text-lg">CSS</span>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-2xl shadow-md flex items-center gap-4 border border-gray-300 hover:scale-105 transition-transform">
+                        <div class="h-[4vw] w-[4vw] bg-white rounded-xl shadow flex items-center justify-center overflow-hidden p-1"><img class="h-[3vw] w-[3vw] object-contain" src="./assets/java-script.png" alt="JavaScript"></div>
+                        <span class="font-bold text-gray-800 text-lg">JavaScript</span>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-2xl shadow-md flex items-center gap-4 border border-gray-300 hover:scale-105 transition-transform">
+                        <div class="h-[4vw] w-[4vw] bg-white rounded-xl shadow flex items-center justify-center overflow-hidden p-1"><img class="h-[3vw] w-[3vw] object-contain" src="./assets/web.png" alt="Web"></div>
+                        <span class="font-bold text-gray-800 text-lg">Java</span>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-2xl shadow-md flex items-center gap-4 border border-gray-300 hover:scale-105 transition-transform">
+                        <div class="h-[4vw] w-[4vw] bg-white rounded-xl shadow flex items-center justify-center overflow-hidden p-1"><img class="h-[3vw] w-[3vw] object-contain" src="./assets/Tailwind CSS.png" alt="Tailwind"></div>
+                        <span class="font-bold text-gray-800 text-lg">Tailwind</span>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-2xl shadow-md flex items-center gap-4 border border-gray-300 hover:scale-105 transition-transform col-span-3 justify-center">
+                        <div class="h-[4vw] w-[4vw] bg-white rounded-xl shadow flex items-center justify-center overflow-hidden p-1"><img class="h-[3vw] w-[3vw] object-contain" src="./assets/mysql-database.png" alt="MySQL"></div>
+                        <span class="font-bold text-gray-800 text-lg">MySQL</span>
+                    </div>
+                </div> 
+
+            </div>
+
+            <!-- PROJECTS -->
+            <div id="projects" class="h-[90vh] w-[60vw] rounded-4xl bg-gray-100 mt-[5vh] ml-[1vw] shadow-lg shadow-gray-300 z-10 flex flex-col items-center justify-center">
+                <div class="rounded-4xl shadow-lg shadow-gray-700 bg-gray-200 w-[15vw] h-[8vh] text-red-700 mt-[2vh] flex items-center justify-center">
+                    <h1 class="text-center text-4xl overflow-visible">Projects</h1>
+                </div>
+                
+                <div class="flex flex-row justify-evenly gap-x-2 mt-4">
+                    <!-- PROJECT CARD -->
+                    <div class="bg-gray-100 rounded-3xl w-[18vw] p-5 shadow-lg shadow-gray-700 border border-solid border-gray-300 flex flex-col justify-between hover:scale-[1.02] hover:shadow-2xl transition-all">
+                    
+                        <!-- Top Image Container with Redirect Icon -->
+                        <div class="relative h-[25vh] w-full bg-gray-600 rounded-2xl overflow-hidden shadow-inner">
+                            <img class="h-full w-full object-cover" src="./assets/top.png" alt="Project Preview">
+                        
+                            <!-- Redirecting Icon Button (Top Right) -->
+                            <a href="https://ashok-kumar-ghosh.github.io/clones/TOP-landing-page/sindex.html" target="_blank" class="absolute top-3 right-3 h-[4vh] w-[4vh] bg-gray-100 rounded-full flex items-center justify-center shadow-md shadow-gray-800">
+                                <img class="h-[2vh] w-[2vh]" src="./assets/share.png" alt="Redirect Icon">
+                            </a>
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="mt-4 flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900 m-0">The Landing Page</h3>
+                            <p class="text-sm text-gray-600 mt-2 m-0">
+                            A simple landing page built using HTML,CSS and JavaScript .
+                            </p>
+                        </div>
+
+                        <!-- Tags / Pills Section (similar to size badges in reference) -->
+                        <div class="flex flex-row flex-wrap gap-2 mt-4">
+                            <span class="text-xs bg-gray-200 text-red-600 px-3 py-1 rounded-full border border-solid border-gray-300">HTML</span>
+                            <span class="text-xs bg-gray-200 text-red-600 px-3 py-1 rounded-full border border-solid border-gray-300">CSS</span>
+                            <span class="text-xs bg-gray-200 text-red-600 px-3 py-1 rounded-full border border-solid border-gray-300">JavaScript</span>
+                        </div>
+
+                        <!-- Bottom Action Bar -->
+                        <div class="flex flex-row justify-between items-center mt-6 pt-3 border-t border-solid border-gray-200">
+                        
+                            <a href="https://github.com/Ashok-Kumar-Ghosh/clones/tree/main/TOP-landing-page" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-xl flex flex-row items-center gap-2 shadow-md shadow-gray-600 text-sm">
+                                <span>View Project</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PROJECT CARD -->
+                    <div class="bg-gray-100 rounded-3xl w-[18vw] p-5 shadow-lg shadow-gray-700 border border-solid border-gray-300 flex flex-col justify-between hover:scale-[1.02] hover:shadow-2xl transition-all">
+                    
+                        <!-- Top Image Container with Redirect Icon -->
+                        <div class="relative h-[25vh] w-full bg-gray-600 rounded-2xl overflow-hidden shadow-inner">
+                            <img class="h-full w-full object-cover" src="./assets/groceria1.png" alt="Project Preview">
+                        
+                            <!-- Redirecting Icon Button (Top Right) -->
+                            <a href="https://github.com/creator-ally/Groceria" target="_blank" class="absolute top-3 right-3 h-[4vh] w-[4vh] bg-gray-100 rounded-full flex items-center justify-center shadow-md shadow-gray-800">
+                                <img class="h-[2vh] w-[2vh]" src="./assets/share.png" alt="Redirect Icon">
+                            </a>
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="mt-4 flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900 m-0">Groceria</h3>
+                            <p class="text-sm text-gray-600 mt-2 m-0">
+                             A fully functional desktop app built using Python Libraries such as Customtkinter.
+                            </p>
+                        </div>
+
+                        <!-- Tags / Pills Section (similar to size badges in reference) -->
+                        <div class="flex flex-row gap-2 flex-wrap mt-4">
+                            <span class="text-xs bg-gray-200 text-red-600 px-3 py-1 rounded-full border border-solid border-gray-300">Python</span>
+                            <span class="text-xs bg-gray-200 text-red-600 px-3 py-1 rounded-full border border-solid border-gray-300">Tkinter</span>
+                            <span class="text-xs bg-gray-200 text-red-600 px-3 py-1 rounded-full border border-solid border-gray-300">Sqlite</span>
+                        </div>
+
+                        <!-- Bottom Action Bar -->
+                        <div class="flex flex-row justify-between items-center mt-6 pt-3 border-t border-solid border-gray-200">
+                        
+                            <a href="https://github.com/creator-ally/Groceria" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-xl flex flex-row items-center gap-2 shadow-md shadow-gray-600 text-sm">
+                                <span>View Project</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PROJECT CARD -->
+                    <div class="bg-gray-100 rounded-3xl w-[18vw] p-5 shadow-lg shadow-gray-700 border border-solid border-gray-300 flex flex-col justify-between hover:scale-[1.02] hover:shadow-2xl transition-all">
+                    
+                        <!-- Top Image Container with Redirect Icon -->
+                        <div class="relative h-[25vh] w-full bg-gray-600 rounded-2xl overflow-hidden shadow-inner">
+                            <img class="h-full w-full object-cover" src="./assets/solelux.png" alt="Project Preview">
+                        
+                            <!-- Redirecting Icon Button (Top Right) -->
+                            <a href="https://solelux.lovable.app/categories" target="_blank" class="absolute top-3 right-3 h-[4vh] w-[4vh] bg-gray-100 rounded-full flex items-center justify-center shadow-md shadow-gray-800">
+                                <img class="h-[2vh] w-[2vh]" src="./assets/share.png" alt="Redirect Icon">
+                            </a>
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="mt-4 flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900 m-0">Solelux</h3>
+                            <p class="text-sm text-gray-600 mt-2 m-0">
+                            A custom sneaker store built using avialable AI tools and deploying it on the web.
+                            </p>
+                        </div>
+
+                        <!-- Tags / Pills Section (similar to size badges in reference) -->
+                        <div class="flex flex-row gap-2 mt-4 flex-wrap">
+                            <span class="text-xs bg-gray-200 text-red-600 px-3 py-1 rounded-full border border-solid border-gray-300">Bolt</span>
+                            <span class="text-xs bg-gray-200 text-red-600 px-3 py-1 rounded-full border border-solid border-gray-300">AI</span>
+                            <span class="text-xs bg-gray-200 text-red-600 px-3 py-1 rounded-full border border-solid border-gray-300">Lovable</span>
+                        </div>
+
+                        <!-- Bottom Action Bar -->
+                        <div class="flex flex-row justify-between items-center mt-6 pt-3 border-t border-solid border-gray-200">
+    
+                            <a href="https://github.com/creator-ally/solelux" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-xl flex flex-row items-center gap-2 shadow-md shadow-gray-600 text-sm">
+                                <span>View Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- EDUCATION -->
+            <div id="education" class="h-[90vh] w-[60vw] rounded-4xl bg-gray-100 mt-[5vh] ml-[1vw] shadow-lg shadow-gray-300 flex flex-col items-center justify-center">
+    
+                <!-- Section Title -->
+                <div class="rounded-4xl shadow-lg shadow-gray-700 bg-gray-200 w-[15vw] h-[8vh] text-red-700 mt-[2vh] flex items-center justify-center">
+                    <h1 class="text-center text-4xl overflow-visible">Education</h1>
+                </div>
+
+                <div class="flex flex-row flex-wrap justify-evenly mt-4">
+                   <div class="bg-gray-100 rounded-3xl w-[22vw] p-5 shadow-lg shadow-gray-700 border border-solid border-gray-300 flex flex-col justify-between hover:scale-[1.02] hover:shadow-2xl transition-all">
+    
+                        <!-- Top Image Container with Redirect Icon -->
+                        <div class="relative h-[10vh] w-[10vh] bg-gray-600 rounded-2xl overflow-hidden shadow-inner left-10 ">
+                            <img class="h-full w-full object-cover shadow-lg shadow-gray-700" src="./assets/sgs.png" alt="Project Preview">
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="mt-4 flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900 m-0">St.Gregorios School Kolkata</h3>
+                            <p class="text-sm text-gray-600 mt-2 m-0">
+                            Completed my Secondary Education under the CBSE.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="bg-gray-100 rounded-3xl w-[22vw] p-5 shadow-lg shadow-gray-700 border border-solid border-gray-300 flex flex-col justify-between hover:scale-[1.02] hover:shadow-2xl transition-all">
+    
+                        <!-- Top Image Container with Redirect Icon -->
+                        <div class="relative h-[10vh] w-[10vh] bg-gray-600 rounded-2xl overflow-hidden shadow-inner left-10 ">
+                            <img class="h-full w-full object-cover" src="./assets/bbit.png" alt="Project Preview">
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="mt-4 flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900 m-0">B.B.I.T Public School</h3>
+                            <p class="text-sm text-gray-600 mt-2 m-0">
+                            Completed my Higher Secondary Education under the CBSE.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="bg-gray-100 rounded-3xl w-[22vw] mt-[2vh] p-5 shadow-lg shadow-gray-700 border border-solid border-gray-300 flex flex-col justify-between hover:scale-[1.02] hover:shadow-2xl transition-all">
+    
+                        <!-- Top Image Container with Redirect Icon -->
+                        <div class="relative h-[10vh] w-[10vh] bg-gray-600 rounded-2xl overflow-hidden shadow-inner left-10 ">
+                            <img class="h-full w-full object-cover" src="./assets/iitm.png" alt="Project Preview">
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="mt-4 flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900 m-0">Indian Institute of technology Madras</h3>
+                            <p class="text-sm text-gray-600 mt-2 m-0">
+                            Currently pursuing Bachelors of Science in Data Science and Apllications.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="bg-gray-100 rounded-3xl w-[22vw] mt-[2vh] p-5 shadow-lg shadow-gray-700 border border-solid border-gray-300 flex flex-col justify-between hover:scale-[1.02] hover:shadow-2xl transition-all">
+    
+                        <!-- Top Image Container with Redirect Icon -->
+                        <div class="relative h-[10vh] w-[10vh] bg-gray-600 rounded-2xl overflow-hidden shadow-inner left-10 ">
+                            <img class="h-full w-full object-cover" src="./assets/scaler.png" alt="Project Preview">
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="mt-4 flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900 m-0">Scaler School Of Technology</h3>
+                            <p class="text-sm text-gray-600 mt-2 m-0">
+                            Currently pursuing the undergrad course of Computer Science & AI.
+                            </p>
+                        </div>
+                    </div>                 
+                </div>
+
+            </div>
+
+            <!-- CONTACT -->
+            <div id="contact" class="h-[90vh] w-[60vw] rounded-4xl bg-gray-100 mt-[5vh] ml-[1vw] shadow-lg shadow-gray-300 z-10 flex flex-col items-center">
+                <div class="rounded-4xl shadow-lg shadow-gray-700 bg-gray-200 w-[15vw] h-[8vh] text-red-700 mt-[2vh] flex items-center justify-center">
+                    <h1 class="text-center text-4xl overflow-visible">Contact</h1>
+                </div>
+                
+                <div class="flex flex-col mt-10 justify-center">
+
+                    <div class="bg-gray-100 rounded-3xl w-[25vw] p-2 shadow-lg shadow-gray-700 border border-solid border-gray-300 flex flex-row justify-start gap-4 hover:scale-[1.02] hover:shadow-2xl transition-all">
+    
+                        <!-- Top Image Container with Redirect Icon -->
+                        <div class="relative h-[10vh] w-[10vh] bg-gray-600 rounded-2xl overflow-hidden shadow-inner  ">
+                            <img class="h-[9vh] w-[9vh] mt-[0.5vh] ml-[0.5vh] object-cover" src="./assets/github.png" alt="Project Preview">
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="mt-4 flex flex-col ">
+                            <h2 class="text-xl font-bold text-gray-900 m-0">GitHub</h2>
+                            <a href="https://github.com/Ashok-Kumar-Ghosh" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-xl flex flex-row items-center gap-2 shadow-md shadow-gray-600 text-sm">
+                                <span>Visit</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-gray-100 rounded-3xl w-[25vw] p-2 mt-4 shadow-lg shadow-gray-700 border border-solid border-gray-300 flex flex-row justify-start gap-4 hover:scale-[1.02] hover:shadow-2xl transition-all">
+    
+                        <!-- Top Image Container with Redirect Icon -->
+                        <div class="relative h-[10vh] w-[10vh] bg-gray-600 rounded-2xl overflow-hidden shadow-inner  ">
+                            <img class="h-full w-full object-cover" src="./assets/linkedin.png" alt="Project Preview">
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="mt-4 flex flex-col ">
+                            <h2 class="text-xl font-bold text-gray-900 m-0">LinkedIn</h2>
+                            <a href="https://www.linkedin.com/in/ashokkrghosh/" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-xl flex flex-row items-center gap-2 shadow-md shadow-gray-600 text-sm">
+                                <span>Connect</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-gray-100 rounded-3xl w-[25vw] p-2 mt-4 shadow-lg shadow-gray-700 border border-solid border-gray-300 flex flex-row justify-start gap-4 hover:scale-[1.02] hover:shadow-2xl transition-all">
+    
+                        <!-- Top Image Container with Redirect Icon -->
+                        <div class="relative h-[10vh] w-[10vh] bg-gray-600 rounded-2xl overflow-hidden shadow-inner  ">
+                            <img class="h-full w-full object-cover" src="./assets/social.png" alt="Project Preview">
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="mt-4 flex flex-col ">
+                            <h3 class="text-xl font-bold text-gray-900 m-0">Email</h3>
+                            <a href="https://github.com/creator-ally/solelux" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-xl flex flex-row items-center gap-2 shadow-md shadow-gray-600 text-sm">
+                                <span>Mail Now</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+            </div>
+        
+        </div>
+    </section>
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="h-[40vh] w-[90vw] rounded-4xl bg-gray-100 mt-[4vh] mb-[4vh] relative bottom-2 mr-[5vw] ml-[5vw] shadow-lg shadow-gray-300 p-8 flex flex-col justify-between border border-solid border-gray-300">
+        <div class="grid grid-cols-3 gap-8 px-8">
+            <!-- Brand Column -->
+            <div class="flex flex-col gap-2">
+                <h2 class="text-2xl font-bold text-red-700 tracking-wide">PORTFOLIO</h2>
+                <p class="text-sm text-gray-600 max-w-xs leading-relaxed">
+                    Designed & developed with passion. Building web applications, and learning much more while doing it.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="flex flex-col items-center gap-2">
+                <h3 class="text-lg font-bold text-gray-900">Quick Links</h3>
+                <div class="flex flex-col gap-1 text-center text-sm text-gray-600">
+                    <a href="#" class="hover:text-red-700 transition-colors">Skills</a>
+                    <a href="#" class="hover:text-red-700 transition-colors">Projects</a>
+                    <a href="#" class="hover:text-red-700 transition-colors">Education</a>
+                    <a href="#" class="hover:text-red-700 transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <!-- Social Connections -->
+            <div class="flex flex-col items-end gap-2">
+                <h3 class="text-lg font-bold text-gray-900">Connect</h3>
+                <div class="flex gap-3 mt-2">
+                    <a href="https://github.com/Ashok-Kumar-Ghosh" target="_blank" class="h-10 w-10 bg-gray-200 rounded-xl flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                        <img src="./assets/github.png" alt="GitHub" class="h-6 w-6">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ashokkrghosh/" target="_blank" class="h-10 w-10 bg-gray-200 rounded-xl flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                        <img src="./assets/linkedin.png" alt="LinkedIn" class="h-6 w-6">
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="h-[360vh] w-[68vw]  ml-[2vw] rounded-xl bg-transparent ">
 
-            <!-- SKILLS -->
-            <div class="h-[90vh] w-[60vw] rounded-2xl bg-gray-300  mt-[5vh] ml-[1vw] shadow-lg shadow-gray-300 z-10">
-
-
-
-
-            </div>
-
-
-            <!-- PROJECTS -->
-            <div class="h-[90vh] w-[60vw] rounded-2xl bg-gray-300 mt-[5vh] ml-[1vw] shadow-lg shadow-gray-300 z-10">
-
-
-
-
-            </div>
-
-
-            <!-- EDUCATION -->
-            <div class="h-[90vh] w-[60vw] rounded-2xl bg-gray-300 mt-[5vh] ml-[1vw] shadow-lg shadow-gray-300 z-10">
-        
-
-
-
-
-
-
-            </div>
-
-
-            <!-- CONTACT -->
-            <div class="h-[90vh] w-[60vw] rounded-2xl bg-gray-300 mt-[5vh] ml-[1vw] shadow-lg shadow-gray-300 z-10">
-
-
-
-            </div>
-        
+        <!-- Bottom Copyright Divider -->
+        <div class="border-t border-solid border-gray-300 pt-4 flex justify-between items-center px-8 text-xs text-gray-500">
+            <span>© 2026 Portfolio. All rights reserved.</span>
+            <span>Crafted with Tailwind CSS</span>
         </div>
-    
-
-    </section>
-
-    
-
-    <!-- FOOTER -->
-    <section class="h-[40vh] w-[90vw] rounded-2xl bg-[#121212] mt-[4vh] mb-[4vh] mr-[5vw] ml-[5vw] shadow-lg shadow-gray-300 grid grid-rows-2">
-
-    </section>
+    </footer>
 
 </body>
-</html>
